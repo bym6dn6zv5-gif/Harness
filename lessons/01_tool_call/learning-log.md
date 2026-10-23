@@ -16,7 +16,7 @@
 学习者最初回答：“是模型调用工具打开的。”
 
 进一步区分：模型提出工具名和参数；Harness 中的 Python 执行程序校验请求并打开文件；
-工具结果再交回模型。实际读取发生在 `target.open("rb")` 和后续的 `file.read(...)`。
+工具结果再交回模型。实际读取发生在 `target.open("rb")` 和后续的读取操作。
 本课的模型回复是预先写好的模拟回复。
 
 ### 请求未知工具会怎样
@@ -49,3 +49,9 @@
 - 之后才尝试独立修改工具或补充新测试；尚未进入第二课。
 
 教材出处见项目的 `docs/learning-sources.md`。
+
+## 开发目录校正
+
+当前统一使用 `D:\python\File of python\Harness开发`。保留该目录已有的
+`mini_harness/lesson01.py`、`test_lesson01.py`、`pytest.ini` 和 `requirements-harness.txt`，
+讲义与 Git 记录已整合到同一目录。当前代码采用 Python 显式条件检查校验参数。

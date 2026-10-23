@@ -19,7 +19,7 @@ Harness Engineering 学习项目。
 在本项目目录运行实验与测试：
 
 ```powershell
-& .\.venv\Scripts\python.exe -X utf8 .\src\mini_harness\lesson01.py
+& .\.venv\Scripts\python.exe -X utf8 -m mini_harness.lesson01 --workspace .\lessons\01_tool_call\workspace
 & .\.venv\Scripts\python.exe -X utf8 -m pytest -q
 ```
 
@@ -28,7 +28,7 @@ Harness Engineering 学习项目。
 ## 项目位置
 
 ```text
-C:\Users\Lenovo\Documents\ChatGPT\Work\harness-learning
+D:\python\File of python\Harness开发
 ```
 
 本项目使用由 `D:\python\python.exe` 创建的独立虚拟环境 `.venv`。
@@ -39,7 +39,7 @@ Python 版本为 3.14.6；Git 和 Node.js 沿用电脑中已有的安装。
 在 PowerShell 中进入项目目录：
 
 ```powershell
-Set-Location -LiteralPath 'C:\Users\Lenovo\Documents\ChatGPT\Work\harness-learning'
+Set-Location -LiteralPath 'D:\python\File of python\Harness开发'
 & .\.venv\Scripts\python.exe --version
 ```
 
@@ -60,14 +60,20 @@ Set-Location -LiteralPath 'C:\Users\Lenovo\Documents\ChatGPT\Work\harness-learni
 git status --short
 ```
 
-Pydantic 用于后续校验工具调用参数；pytest 用于运行测试。
+当前采用本目录已有的第一课实现，用 Python 条件检查校验工具参数。
+Pydantic 留作后续参数模型练习；pytest 用于运行测试。
 setuptools 是项目配置中声明的 Python 打包后端。
 
 ## 依赖与版本记录
 
 - `pyproject.toml`：记录计划使用的依赖范围及未来的项目结构。
+- `requirements-harness.txt`：保留本目录已有的学习依赖清单。
 - `requirements-environment.lock.txt`：记录本次实际安装的依赖版本，安装成功后生成。
+- `pytest.ini`：保留本目录已有的测试配置，将临时文件放在项目内。
 - `.gitignore`：排除虚拟环境、缓存、密钥文件和后续运行记录。
+
+当前 `.venv` 已恢复版本记录中的第一课核心依赖。`requirements-harness.txt` 还列有后续课程的
+模型 SDK 等额外依赖；这份原有清单保留不变，额外依赖尚未恢复到新虚拟环境中。
 
 如需在同类 Windows / Python 3.14 环境中恢复依赖，可在已创建的虚拟环境中执行：
 
@@ -80,7 +86,7 @@ setuptools 是项目配置中声明的 Python 打包后端。
 ## 当前边界
 
 - 项目使用 Git 管理。GitHub 同步包含学习代码、测试、讲义、路线与学习记录；虚拟环境、缓存和密钥文件由忽略规则排除。
-- `src` 和 `tests` 已包含第一课的实验与测试。
+- 第一课代码位于 `mini_harness/lesson01.py`，测试位于 `test_lesson01.py`；沿用本目录已有的文件，保留其实现。
 - `pyproject.toml` 中的 `mini-harness` 命令入口尚未实现；本课直接运行 Python 文件，不安装这个入口。
 - 第一课测试验证教学实验的行为；真实模型效果尚未验证。
 - Docker、模型 API 和密钥留到对应课程中配置；本阶段没有发起模型调用。

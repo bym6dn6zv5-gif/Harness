@@ -33,14 +33,14 @@ flowchart TD
 打开 PowerShell，逐行执行：
 
 ```powershell
-Set-Location -LiteralPath 'C:\Users\Lenovo\Documents\ChatGPT\Work\harness-learning'
-& .\.venv\Scripts\python.exe -X utf8 .\src\mini_harness\lesson01.py
+Set-Location -LiteralPath 'D:\python\File of python\Harness开发'
+& .\.venv\Scripts\python.exe -X utf8 -m mini_harness.lesson01 --workspace .\lessons\01_tool_call\workspace
 ```
 
 终端应显示五个阶段，最后一行包含：
 
 ```text
-[5 模型给出回答] 我收到的文件内容是：今天的目标：看懂模型、工具和执行程序之间的数据流。
+[5 模型给出回答] 文件内容：今天的目标：看懂模型、工具和执行程序之间的数据流。
 ```
 
 `-X utf8` 让本次 Python 运行使用 UTF-8，便于在 Windows 终端中显示中文。
@@ -73,14 +73,16 @@ Set-Location -LiteralPath 'C:\Users\Lenovo\Documents\ChatGPT\Work\harness-learni
 
 ## 第三步：按这个顺序读代码
 
-主文件：`src/mini_harness/lesson01.py`。
+主文件：`mini_harness/lesson01.py`，测试文件：`test_lesson01.py`。
 
 1. 先读 `run_demo()`，对照五条终端输出，找到数据传递的顺序。
 2. 再读 `MockModel.reply()`，确认它只是返回字典，没有打开文件。
 3. 最后读 `execute_tool()`，找到 `target.open("rb")`；实际读取文件发生在这里。
-4. 查看 `ReadFileArgs`：它要求 `path` 为非空字符串，禁止额外参数，也禁止把数字自动转换成字符串。
+4. 查看读取之前的 `isinstance(...)`、`set(arguments)` 和 `strip()` 检查：它们要求恰好一个 `path` 参数，且值为非空白字符串。
 
-`BaseModel` 和 `Field` 来自 Pydantic，用来声明参数要求。现在只需理解“先校验，再执行”，不用背下它们的全部用法。
+这里保留学习目录中已有的 Python 显式参数校验实现。`isinstance` 检查类型，`set(arguments)`
+检查参数名，`strip()` 用来判断字符串去掉空白后是否还有内容。现在先理解“先校验，再执行”。
+Pydantic 参数模型会作为后续对照练习。
 
 路径检查和大小限制已经提供，帮助实验只接触指定目录中的小文件。第一遍可以先跟踪正常流程，第二遍再看检查失败时怎样返回。
 

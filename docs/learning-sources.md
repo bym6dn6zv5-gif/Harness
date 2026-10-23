@@ -3,7 +3,11 @@
 ## 当前第一课采用什么教材
 
 当前第一课是助手根据本项目目标单独编写的 Python 教学实验，文件为
-`src/mini_harness/lesson01.py`，对应测试为 `tests/test_lesson01.py`。
+`mini_harness/lesson01.py`，对应测试为 `test_lesson01.py`。
+
+本次将工作目录统一到学习者已有的 `D:\python\File of python\Harness开发`，保留该目录的
+第一课源码、测试、`pytest.ini` 与 `requirements-harness.txt`。当前源码用 Python 显式条件检查
+校验参数；历史版本中的 Pydantic 参数模型保留在 Git 历史中，后续再对照学习。
 
 它用预先写好的模拟回复展示“提出工具调用 → 程序校验并执行 → 回传结果 → 回答”的过程。
 代码和自定义消息格式是本项目的教学实现；目前没有移植 Codex 或 claw-code 的实现，
