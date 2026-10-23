@@ -19,15 +19,15 @@
 
 | 材料 | 阅读用途 | 当前状态 |
 | --- | --- | --- |
-| [OpenAI Codex](https://github.com/openai/codex) | 对照学习真实编程 Agent 的工具分发、会话、执行约束与上下文管理 | 已核对官方仓库入口及 `codex-rs/` 目录；具体实现尚未按课精读 |
-| 学习者本机 `D:\GitHub\claw-code` | 与另一套实现对照工具执行、权限、会话及 MCP 的设计 | 已检查本机 README 和结构；README 指明 `rust/` 为当前主实现，`src/` 为 Python 参考与移植辅助部分 |
+| [OpenAI Codex](https://github.com/openai/codex) | 对照学习真实编程 Agent 的工具分发、会话、执行约束与上下文管理 | 六天包已按固定提交定位工具路由片段，学习者尚未完成源码精读 |
+| 学习者本机 `D:\GitHub\claw-code` | 与另一套实现对照工具执行、权限、会话及 MCP 的设计 | 已按本地提交核对小型循环与工具分发；README 指明 `rust/` 为主实现，`src/` 为 Python 辅助部分 |
 | [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent) | 辅助阅读较小的循环、模型与执行环境实现 | 已列入第 10 周的辅助阅读，尚未进行本项目内的源码练习 |
 
 Codex 的官方仓库用于理解开源 Codex CLI 的实现。课程中对源码的结论应限定到所检查的版本和代码，
 不能由此直接推断桌面应用或云端产品的全部内部实现。
 
 进入每次源码课时，先记录仓库地址、commit、文件路径和符号，再说明它与本课实验的对应关系。
-当前没有固定 Codex 源码快照，不把动态分支链接描述为已验证的具体实现。
+六天入门包的固定提交、文件与符号见 [源码阅读定位](../lessons/six_day_pack/source-reading.md)。
 外部项目源码不在本学习仓库中整份复制；阅读其源码时遵守相应许可证。
 
 ## 概念和工程文章

@@ -13,6 +13,7 @@ Harness Engineering 学习项目。
 - [12 周路线](docs/roadmap.md)
 - [第一课讲义](lessons/01_tool_call/README.md)
 - [第一课学习记录与问答](lessons/01_tool_call/learning-log.md)
+- [接下来六次学习的总入口](lessons/six_day_pack/README.md)
 
 当前已由学习者实际运行演示和测试，结果为 **13 passed**；第一课仍在讲解测试如何检查执行过程。
 
@@ -24,6 +25,20 @@ Harness Engineering 学习项目。
 ```
 
 本课不联网，不调用模型 API，不产生模型费用。
+
+## 已准备的六天入门课程
+
+按每次约 2 小时安排，不绑定日期。前 3 次是工具反馈、注册与校验、有限循环；
+后 3 次是 JSONL 记录、上下文裁剪、固定案例报告。
+每次都有讲义、参考实验、留给学习者填写的小函数、单独的检查器、提示和聊天复盘模板。
+
+从 [六天课程总入口](lessons/six_day_pack/README.md) 开始；
+实际学习进度记在 [study-log.md](lessons/six_day_pack/study-log.md)，目前全部留为待学习。
+材料准备完成不代表学习者已经完成。
+
+默认 `pytest -q` 运行参考实现检查，当前为 60 项；练习要显式运行相应的
+`exercises/check_dayXX.py`，未填写时会提示 `NotImplementedError`。
+运行核验见 [verification.md](lessons/six_day_pack/verification.md)。
 
 ## 项目位置
 
@@ -87,6 +102,7 @@ setuptools 是项目配置中声明的 Python 打包后端。
 
 - 项目使用 Git 管理。GitHub 同步包含学习代码、测试、讲义、路线与学习记录；虚拟环境、缓存和密钥文件由忽略规则排除。
 - 第一课代码位于 `mini_harness/lesson01.py`，测试位于 `test_lesson01.py`；沿用本目录已有的文件，保留其实现。
+- 六天参考实验位于 `mini_harness/lesson01_cases.py` 与 `lesson02.py` 到 `lesson06.py`；只处理离线教学数据。
 - `pyproject.toml` 中的 `mini-harness` 命令入口尚未实现；本课直接运行 Python 文件，不安装这个入口。
 - 第一课测试验证教学实验的行为；真实模型效果尚未验证。
 - Docker、模型 API 和密钥留到对应课程中配置；本阶段没有发起模型调用。
