@@ -1,5 +1,7 @@
 # 12 周 Harness Engineering 学习路线
 
+[回仓库首页](../README.md) · [按周与每天查课](study-calendar.md) · [按主题查资料](reference-index.md)
+
 完整日课已准备：[12 周课程](../lessons/12_week_course/README.md)。
 主教材从第 1 周起按 [源码任务表](../lessons/source_mastery/curriculum-map.md) 阅读 claw-code 与 Codex；
 [Hermes 记忆机制](../lessons/hermes_memory/README.md) 单列五课。

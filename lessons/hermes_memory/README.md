@@ -1,5 +1,7 @@
 # Hermes 记忆机制：从文件到下一轮回答
 
+[回仓库首页](../../README.md) · [按时间查课](../../docs/study-calendar.md) · [按主题查资料](../../docs/reference-index.md)
+
 教材对象已由学习者确认：[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)。
 本专题锁定提交 **d764d0c7e20f33bac869b6ebd34570de0cb6e069**，核对日期 2026-10-24。
 接口发展很快，下面“当前”均指这个版本，不保证其他版本一致。

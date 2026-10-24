@@ -1,5 +1,7 @@
 # 第 7—9 天：给 Harness 加上执行边界和恢复能力
 
+[回仓库首页](../../README.md) · [按时间查课](../../docs/study-calendar.md) · [按主题查资料](../../docs/reference-index.md)
+
 每天约 2 小时，不绑定日期。先完成 [前六天](../six_day_pack/README.md) 中对应的基础，
 再进入这里。教材已准备并验证，学习者进度仍为 **待学习**。
 
