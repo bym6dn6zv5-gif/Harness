@@ -13,6 +13,8 @@
 代码和自定义消息格式是本项目的教学实现；目前没有移植 Codex 或 claw-code 的实现，
 也没有用真实模型评测来验证模型能力。
 
+现在以 claw-code 和开源 Codex 为贯穿主教材，新增经学习者确认的 Hermes 记忆专题。
+入口：[源码主教材](../lessons/source_mastery/README.md)、[每周源码任务](../lessons/source_mastery/curriculum-map.md)、[Hermes 五课](../lessons/hermes_memory/README.md)。
 课程由小实验逐步进入真实项目源码。每次源码阅读都要明确区分：原项目的行为、教学实验的简化、学习者的理解。
 
 ## 源码实例教材
@@ -21,6 +23,7 @@
 | --- | --- | --- |
 | [OpenAI Codex](https://github.com/openai/codex) | 对照学习真实编程 Agent 的工具分发、会话、执行约束与上下文管理 | 六天包已按固定提交定位工具路由片段，学习者尚未完成源码精读 |
 | 学习者本机 `D:\GitHub\claw-code` | 与另一套实现对照工具执行、权限、会话及 MCP 的设计 | 已按本地提交核对小型循环与工具分发；README 指明 `rust/` 为主实现，`src/` 为 Python 辅助部分 |
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 文件记忆、历史检索、后台复盘、provider 与压缩边界 | 已按固定提交核对专题所列分支，学习者待学习 |
 | [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent) | 辅助阅读较小的循环、模型与执行环境实现 | 已列入第 10 周的辅助阅读，尚未进行本项目内的源码练习 |
 
 Codex 的官方仓库用于理解开源 Codex CLI 的实现。课程中对源码的结论应限定到所检查的版本和代码，
@@ -29,6 +32,10 @@ Codex 的官方仓库用于理解开源 Codex CLI 的实现。课程中对源码
 进入每次源码课时，先记录仓库地址、commit、文件路径和符号，再说明它与本课实验的对应关系。
 六天入门包的固定提交、文件与符号见 [源码阅读定位](../lessons/six_day_pack/source-reading.md)。
 外部项目源码不在本学习仓库中整份复制；阅读其源码时遵守相应许可证。
+
+第 7 天新增了 [claw-code 权限入口与执行分支对照](../lessons/days07_09/source-reading.md)，
+第 8、9 天先结合 Python 官方 subprocess / sqlite3 接口完成离线实验。
+这些讲义已备课，不代表学习者已完成阅读；Python 小实验仍是本课程的简化实现。
 
 ## 概念和工程文章
 

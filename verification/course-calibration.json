@@ -1,0 +1,192 @@
+{
+  "kind": "authored_fixture_calibration",
+  "real_model_evaluation": false,
+  "tasks": 30,
+  "cases": 111,
+  "generated_pytest_runs": 60,
+  "holdout_guard": true,
+  "fresh_workspace_each_prepare": true,
+  "material_sha256": "4f960ccdd18e97bdd9fe828c1f98e764ec453b1209752740f7fa5e63d5389b8d",
+  "rows": [
+    {
+      "id": "T01",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T02",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T03",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T04",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T05",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T06",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T07",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T08",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T09",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T10",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T11",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T12",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T13",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T14",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T15",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T16",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T17",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T18",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T19",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T20",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T21",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T22",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T23",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T24",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T25",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T26",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T27",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T28",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T29",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    },
+    {
+      "id": "T30",
+      "buggy_source": 1,
+      "reference_source": 0,
+      "grading_unchanged": true
+    }
+  ]
+}

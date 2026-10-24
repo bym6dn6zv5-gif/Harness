@@ -1,0 +1,211 @@
+{
+  "checked_at": "2026-10-24",
+  "scope": "Selected source paths and teaching branches; not a whole-repository audit",
+  "repositories": [
+    {
+      "name": "claw-code",
+      "local_path": "D:\\GitHub\\claw-code",
+      "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+      "files": [
+        {
+          "path": "rust/crates/claw-analog/src/lib.rs",
+          "sections": [
+            "471-518 persistence and schema",
+            "1285-1418 request, dispatch and tool return",
+            "1674-1686 optional enforcement",
+            "1953-1985 read_file dispatch"
+          ]
+        },
+        {
+          "path": "rust/crates/runtime/src/permission_enforcer.rs",
+          "sections": [
+            "check delegates authorization; Prompt defers to caller"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "openai/codex",
+      "commit": "e6ebdfe00b520e21ed50ac0362656f32dd64d2fc",
+      "files": [
+        {
+          "path": "codex-rs/core/src/tools/router.rs",
+          "blob_sha": "36fbfe442724f9f0ae7b003f336a104713591880",
+          "url": "https://github.com/openai/codex/blob/e6ebdfe00b520e21ed50ac0362656f32dd64d2fc/codex-rs/core/src/tools/router.rs",
+          "sections": [
+            "257-309 build_tool_call",
+            "359-393 dispatch invocation"
+          ]
+        },
+        {
+          "path": "codex-rs/core/src/stream_events_utils.rs",
+          "blob_sha": "964302c4f111bb117966f3dd913bd9535fb2587b",
+          "url": "https://github.com/openai/codex/blob/e6ebdfe00b520e21ed50ac0362656f32dd64d2fc/codex-rs/core/src/stream_events_utils.rs",
+          "sections": [
+            "318-382 output item and cancellation"
+          ]
+        },
+        {
+          "path": "codex-rs/core/src/session/turn.rs",
+          "blob_sha": "65cbd64a18790d09bb3352625962651a63c63201",
+          "url": "https://github.com/openai/codex/blob/e6ebdfe00b520e21ed50ac0362656f32dd64d2fc/codex-rs/core/src/session/turn.rs",
+          "sections": [
+            "173 run_turn entry",
+            "579-627 follow-up decision",
+            "735-747 stop hook entry"
+          ]
+        },
+        {
+          "path": "codex-rs/rollout/src/recorder.rs",
+          "blob_sha": "6d6756e8100cee6e97dcb7d2ed70065d6c733751",
+          "url": "https://github.com/openai/codex/blob/e6ebdfe00b520e21ed50ac0362656f32dd64d2fc/codex-rs/rollout/src/recorder.rs",
+          "sections": [
+            "1079-1133 queue, persist and flush"
+          ]
+        },
+        {
+          "path": "codex-rs/core/src/compact.rs",
+          "blob_sha": "163e7d53e417eaa5b6da7e5d301b77373bd06f9d",
+          "url": "https://github.com/openai/codex/blob/e6ebdfe00b520e21ed50ac0362656f32dd64d2fc/codex-rs/core/src/compact.rs",
+          "sections": [
+            "697-735 compacted history construction"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "commit": "d764d0c7e20f33bac869b6ebd34570de0cb6e069",
+      "files": [
+        {
+          "path": "agent/agent_init.py",
+          "blob_sha": "ee1aedc9521f1c2979c89a015bbf28a8091a45a1",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/agent/agent_init.py",
+          "sections": [
+            "1298-1382 _init_memory"
+          ]
+        },
+        {
+          "path": "agent/system_prompt.py",
+          "blob_sha": "03ede0060d239d9ecca197ed29d039d205fc230e",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/agent/system_prompt.py",
+          "sections": [
+            "522-547 memory parts",
+            "814-832 invalidate and reload"
+          ]
+        },
+        {
+          "path": "tools/memory_tool.py",
+          "blob_sha": "aeb839a2e694946a350ba9eb4c6a46df8062ad4d",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/tools/memory_tool.py",
+          "sections": [
+            "179-220 unattended review gate",
+            "222-289 dispatch and action validation"
+          ]
+        },
+        {
+          "path": "tools/memory_tool_store.py",
+          "blob_sha": "3666bf9fd564873f29e6ce76f1508fa9007b1418",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/tools/memory_tool_store.py",
+          "sections": [
+            "175-254 init and frozen load",
+            "338-445 mutation, add and patch",
+            "539-644 batch, snapshot and response",
+            "676-696 atomic write and drift heuristic"
+          ]
+        },
+        {
+          "path": "tools/session_search_tool.py",
+          "blob_sha": "4cd76bae45c9b2f122eacb4c7cddef3e6bcf7526",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/tools/session_search_tool.py",
+          "sections": [
+            "577-650 dispatch and read-only DB"
+          ]
+        },
+        {
+          "path": "hermes_state_search.py",
+          "blob_sha": "a7993f49d168f2f461a09b0e7a00aa264c665d82",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/hermes_state_search.py",
+          "sections": [
+            "917-932 search path description"
+          ]
+        },
+        {
+          "path": "hermes_state_fts.py",
+          "blob_sha": "7193e1e3eba62a96b7a157a12699d7fb3f32c7b1",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/hermes_state_fts.py",
+          "sections": [
+            "21-54 CJK index design",
+            "113-128 optional extension"
+          ]
+        },
+        {
+          "path": "agent/memory_manager.py",
+          "blob_sha": "c6525e0c1c1b315dc26be085e9d421b894f387e2",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/agent/memory_manager.py",
+          "sections": [
+            "336-374 prompt and prefetch",
+            "613-733 lifecycle and pre-compress"
+          ]
+        },
+        {
+          "path": "agent/memory_provider.py",
+          "blob_sha": "c997046608283b1c18b0b422b4d803b1be69aaa6",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/agent/memory_provider.py",
+          "sections": [
+            "84-222 provider interface"
+          ]
+        },
+        {
+          "path": "agent/memory_context.py",
+          "blob_sha": "2075328f123ab26e3e3b13c53aa8f03096eff622",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/agent/memory_context.py",
+          "sections": [
+            "169-185 recall wrapper"
+          ]
+        },
+        {
+          "path": "agent/turn_finalizer.py",
+          "blob_sha": "c882efb7d611186eefa773e7df642720feb0072f",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/agent/turn_finalizer.py",
+          "sections": [
+            "763-795 review triggers"
+          ]
+        },
+        {
+          "path": "agent/background_review.py",
+          "blob_sha": "bc1d9a33f40cbf05ddf5d51b940a7e2653cc9e32",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/agent/background_review.py",
+          "sections": [
+            "review settings and fork surface; partial reading"
+          ]
+        },
+        {
+          "path": "run_agent.py",
+          "blob_sha": "8d7d4874c1c71b282554d1f8bb4da3a061d12bbe",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/run_agent.py",
+          "sections": [
+            "757-787 review gates"
+          ]
+        },
+        {
+          "path": "agent/conversation_compression_checkpoint.py",
+          "blob_sha": "49c508b3fd9595d22735a2ccf771f37c071573be",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/agent/conversation_compression_checkpoint.py",
+          "sections": [
+            "18-93 required checkpoint refusal"
+          ]
+        },
+        {
+          "path": "website/docs/user-guide/features/memory.md",
+          "blob_sha": "83f672120e2f647c093deaad04755e4748ee736e",
+          "url": "https://github.com/NousResearch/hermes-agent/blob/d764d0c7e20f33bac869b6ebd34570de0cb6e069/website/docs/user-guide/features/memory.md",
+          "sections": [
+            "1-174 storage, snapshot, actions",
+            "283-439 gates and review settings"
+          ]
+        }
+      ]
+    }
+  ]
+}

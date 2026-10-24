@@ -7,13 +7,18 @@ Harness Engineering 学习项目。
 ## 教材与学习进度
 
 第一课是为本学习项目单独编写的 Python 教学实验，演示模型请求、工具分发、参数校验和结果回传。
-后续源码对照教材采用 OpenAI Codex 开源仓库和学习者本机的 claw-code；本课尚未进入这两个项目的源码精读。
+claw-code 与开源 Codex 作为贯穿 12 周的主教材；Hermes 记忆机制另设五课专题。
+当前先学第一课的数据流，再逐步完成真实源码精读，进度按实际讲解和练习验收。
 
 - [教材来源与使用方式](docs/learning-sources.md)
+- [完整 12 周课程：72 次动手课与 12 次复盘](lessons/12_week_course/README.md)
+- [claw-code 与 Codex 源码主教材](lessons/source_mastery/README.md)
+- [Hermes 记忆机制五课](lessons/hermes_memory/README.md)
 - [12 周路线](docs/roadmap.md)
 - [第一课讲义](lessons/01_tool_call/README.md)
 - [第一课学习记录与问答](lessons/01_tool_call/learning-log.md)
 - [接下来六次学习的总入口](lessons/six_day_pack/README.md)
+- [第 7—9 天：权限、超时与恢复](lessons/days07_09/README.md)
 
 当前已由学习者实际运行演示和测试，结果为 **13 passed**；第一课仍在讲解测试如何检查执行过程。
 
@@ -36,9 +41,25 @@ Harness Engineering 学习项目。
 实际学习进度记在 [study-log.md](lessons/six_day_pack/study-log.md)，目前全部留为待学习。
 材料准备完成不代表学习者已经完成。
 
-默认 `pytest -q` 运行参考实现检查，当前为 60 项；练习要显式运行相应的
+默认 `pytest -q` 运行参考实现检查，加入第 7—9 天与记忆缩影后当前为 119 项；练习要显式运行相应的
 `exercises/check_dayXX.py`，未填写时会提示 `NotImplementedError`。
 运行核验见 [verification.md](lessons/six_day_pack/verification.md)。
+
+## 已准备的第 7—9 天
+
+继续按每次约 2 小时安排：第 7 天区分注册与许可，第 8 天处理固定工具进程超时，
+第 9 天用 SQLite 保存只读模拟任务，再启动另一个进程恢复。
+每一天都有讲义、参考实验、待填写练习、检查器、分级提示和聊天入口。
+
+从 [第 7—9 天总入口](lessons/days07_09/README.md) 打开；
+实际学习进度留在该目录的 [学习日志](lessons/days07_09/study-log.md)，仍为待学习。
+新增 43 项参考检查；详细范围与限制见 [本批核验](lessons/days07_09/verification.md)。
+
+## 完整课程与材料
+
+12 周讲义、30 个自编修复任务、独立评分材料生成器、实验与架构模板、面试练习已备好。
+30 题材料校准不等于真实模型修复成绩；未来完整 Agent 的 run/resume/eval、Docker 执行器等仍为课程实现任务。
+当前不产生模型调用费用。核验范围见 [course-verification.md](course-verification.md)。
 
 ## 项目位置
 
@@ -76,7 +97,7 @@ git status --short
 ```
 
 当前采用本目录已有的第一课实现，用 Python 条件检查校验工具参数。
-Pydantic 留作后续参数模型练习；pytest 用于运行测试。
+后续参考实验已经使用 Pydantic 做参数和检查点格式校验；pytest 用于运行测试。
 setuptools 是项目配置中声明的 Python 打包后端。
 
 ## 依赖与版本记录
@@ -103,6 +124,7 @@ setuptools 是项目配置中声明的 Python 打包后端。
 - 项目使用 Git 管理。GitHub 同步包含学习代码、测试、讲义、路线与学习记录；虚拟环境、缓存和密钥文件由忽略规则排除。
 - 第一课代码位于 `mini_harness/lesson01.py`，测试位于 `test_lesson01.py`；沿用本目录已有的文件，保留其实现。
 - 六天参考实验位于 `mini_harness/lesson01_cases.py` 与 `lesson02.py` 到 `lesson06.py`；只处理离线教学数据。
+- 第 7—9 天参考实验位于 `mini_harness/lesson07.py` 到 `lesson09.py`；第 8 天的固定 worker 不执行模型生成代码，第 9 天仅恢复只读模拟任务。
 - `pyproject.toml` 中的 `mini-harness` 命令入口尚未实现；本课直接运行 Python 文件，不安装这个入口。
 - 第一课测试验证教学实验的行为；真实模型效果尚未验证。
 - Docker、模型 API 和密钥留到对应课程中配置；本阶段没有发起模型调用。

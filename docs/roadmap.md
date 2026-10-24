@@ -1,5 +1,10 @@
 # 12 周 Harness Engineering 学习路线
 
+完整日课已准备：[12 周课程](../lessons/12_week_course/README.md)。
+主教材从第 1 周起按 [源码任务表](../lessons/source_mastery/curriculum-map.md) 阅读 claw-code 与 Codex；
+[Hermes 记忆机制](../lessons/hermes_memory/README.md) 单列五课。
+教材备课与学习者实际掌握分开记录，详见课程进度表。
+
 起点：能写 Python 小项目；每天约 2 小时；以 Agent / Harness 工程实习准备为目标。
 先完成单 Agent 的可解释闭环，再讨论更复杂的设计。
 

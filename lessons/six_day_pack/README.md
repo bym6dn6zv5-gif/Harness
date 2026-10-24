@@ -49,7 +49,8 @@ Set-Location -LiteralPath 'D:\python\File of python\Harness开发'
 & .\.venv\Scripts\python.exe -X utf8 -m pytest -q
 ```
 
-当前参考检查为 60 项，包含原有 13 项。未填写的练习不会被这条命令自动收集。
+本六天课程最初的参考检查为 60 项，包含原有 13 项；加入第 7—9 天与记忆缩影后，项目当前合计 119 项。
+未填写的练习不会被这条命令自动收集。
 当天写完练习后，显式运行对应检查器，例如：
 
 ```powershell
@@ -90,3 +91,8 @@ Set-Location -LiteralPath 'D:\python\File of python\Harness开发'
 
 这组 Python 实验为本项目的教学代码。Codex 和 claw-code 提供真实工程对照，
 版本与定位见 [source-reading.md](source-reading.md)。前两天不要求掌握 Rust，源码对照可以在聊天中一起读。
+
+## 后续材料
+
+下一组已准备为 [第 7—9 天：权限、超时与恢复](../days07_09/README.md)。
+完成这里对应的前置知识后再进入，不需要一次看完全部课程。
